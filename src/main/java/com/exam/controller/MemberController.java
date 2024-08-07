@@ -31,7 +31,7 @@ public class MemberController {
 	
 	@GetMapping("/")
 	public String main( ) {
-		return "main home- SCM Poll 실습 Hello World";
+		return "main home- SCM Poll 실습 Hello World 추가할게요~";
 	}
 	
 	@GetMapping("/hello")
@@ -39,8 +39,7 @@ public class MemberController {
 		
 		return "hello world";
 	}
-	
-	
+
     // 회원가입
 	@PostMapping(value={"/users"})
 	public ResponseEntity<Member>  createMember(@Valid @RequestBody Member member) {
